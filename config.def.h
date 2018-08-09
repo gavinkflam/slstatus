@@ -12,6 +12,7 @@ static const char unknown_str[] = "n/a";
 /*
  * function            description                     argument (example)
  *
+ * alsa_vol_perc       ALSA volume in percent          mixer name (Master)
  * battery_perc        battery percentage              battery name (BAT0)
  *                                                     NULL on OpenBSD
  * battery_state       battery charging state          battery name (BAT0)

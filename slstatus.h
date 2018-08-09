@@ -1,5 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
+/* alsa_volume */
+const char *alsa_vol_perc(const char *mixer_name);
+
 /* battery */
 const char *battery_perc(const char *);
 const char *battery_state(const char *);

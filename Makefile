@@ -6,6 +6,7 @@ include config.mk
 
 REQ = util
 COM =\
+	components/alsa_volume\
 	components/battery\
 	components/cpu\
 	components/datetime\
