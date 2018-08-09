@@ -6,6 +6,9 @@ const unsigned int interval = 1000;
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
 
+/* whether or not to skip items if no value can be retrieved */
+static const int skip_empty_items = 0;
+
 /* maximum output string length */
 #define MAXLEN 2048
 

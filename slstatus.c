@@ -85,6 +85,9 @@ main(int argc, char *argv[])
 		status[0] = '\0';
 		for (i = len = 0; i < LEN(args); i++) {
 			if (!(res = args[i].func(args[i].args))) {
+				if (skip_empty_items) {
+					continue;
+				}
 				res = unknown_str;
 			}
 			if ((ret = esnprintf(status + len, sizeof(status) - len,
