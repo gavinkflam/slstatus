@@ -53,5 +53,7 @@ alsa_vol_perc(const char *mixer_name)
 	}
 
 	snd_mixer_selem_get_playback_volume_range(elem, &minv, &maxv);
+  snd_mixer_close(handle);
+
 	return bprintf("%d", (vol - minv) * 100 / (maxv - minv));
 }
